@@ -17,22 +17,22 @@ The displacement for the masses are calculated as,
 
 <h3>The equation for the experiment is as follows</h3>
 
-![Alt text](Images/4.png)
+![Alt text](images/4.png)
 
 <p>The X1 and X2 are the  static amplitudes </p>
 
-![Alt text](Images/5.png)
+![Alt text](images/5.png)
 
 <p>The x1 and x2 are the dynamic amplitudes which is the cos function of time</p>
 
-![Alt text](Images/6.png)
+![Alt text](images/6.png)
 
 <p>the x10 and x20 is the initial amplitude</p>
 
-![Alt text](Images/7.png)![Alt text](Images/9.png)
+![Alt text](images/7.png)![Alt text](images/9.png)
 
 <p>the x1d and x2d is the initial velocity  assumption  which is 0 in this case</p>
 
-![Alt text](Images/8.png)
+![Alt text](images/8.png)
 
 </center>

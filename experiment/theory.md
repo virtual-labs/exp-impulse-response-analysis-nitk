@@ -1,38 +1,19 @@
 ### Theory
 
-Impulse force can be defined as a force that has large magnitude and acts for a short time. It can be measured by finding the change it causes in the momentum of system.
-<br> <center>Impulse = F&delta;T = m $\dot x$<sub>2</sub> - m $\dot x$<sub>1</sub> </center>
+Impulse force can be defined as a large magnitude force that acts for a short time. 
 
-The initial conditions are given by<center>
+An example of an Impulse force is a blast load applied on top of a building. For this experiment, a building with two floors is considered. A blast load is a load applied on the structure which comes immediately after an explosion. It combines overpressure and impulse which lasts for a short duration of time.
 
-x(t=0) = x<sub>0</sub> = 0
+The response of the structure due to the impulse load is influenced by the stiffness and mass of the structure. However, the stiffness and mass of the structures are influenced by the nature of construction and materials used.
 
-$\dot x$(t=0) = $\dot x$<sub>0</sub> = 1/m
-
-</center>
-
-The displacement for the masses are calculated as,
-
-<center>
-
-<h3>The equation for the experiment is as follows</h3>
-
-![Alt text](images/4.png)
-
-<p>The X1 and X2 are the  static amplitudes </p>
-
-![Alt text](images/5.png)
-
-<p>The x1 and x2 are the dynamic amplitudes which is the cos function of time</p>
+The magnitude of the impulse force can be calculated by the impulse momentum principle.
 
 ![Alt text](images/6.png)
 
-<p>the x10 and x20 is the initial amplitude</p>
+The initial conditions are given by
 
-![Alt text](images/7.png)![Alt text](images/9.png)
+![Alt text](images/7.png)
 
-<p>the x1d and x2d is the initial velocity  assumption  which is 0 in this case</p>
+![Alt text](images/4.png)
 
-![Alt text](images/8.png)
-
-</center>
+![Alt text](images/5.png)

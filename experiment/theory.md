@@ -1,6 +1,4 @@
-### Theory
-
-Impulse force can be defined as a large magnitude force that acts for a short time. 
+ Impulse force can be defined as a large magnitude force that acts for a short time. 
 
 An example of an Impulse force is a blast load applied on top of a building. For this experiment, a building with two floors is considered. A blast load is a load applied on the structure which comes immediately after an explosion. It combines overpressure and impulse which lasts for a short duration of time.
 

@@ -6,6 +6,8 @@
       "answers": {
         "a": "True",
         "b": "False"
+        
+        
       },
       "explanations": {
         "a": "Periodic excitations compensates for energy loss during oscillations ",

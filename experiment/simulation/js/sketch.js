@@ -49,6 +49,9 @@ let button2;
 let button3;
 let button4;
 let button5;
+let button6 ; 
+let button7 ; 
+
 let spr;
 
 let flag = true;
@@ -56,7 +59,7 @@ let flag = true;
 let page1 = true;
 let page2 = false;
 let page3 = false;
-
+let page4= false; 
 // animation
 let animation = true;
 let touch = false;
@@ -89,8 +92,8 @@ function setup() {
 
     position_graph2 = new Graph(50, 210, 100, 220, "x2", "t");
 
-    magFac1 = new DynamicGraph(50, 500, 300, 220, "X1/Xst", "ω1", 0,7,0,10, System.mag_func1);
-    magFac2 = new DynamicGraph(350, 500, 300, 220, "X2/Xst", "ω2",0, 7,0,10, System.mag_func2);
+    magFac1 = new DynamicGraph(50, 500, 300, 220, "X/Xst", "ω", 0,7,0,10, System.mag_func1,0);
+    magFac2 = new DynamicGraph(50, 500, 300, 220, "X/Xst", "ω",0, 7,0,10, System.mag_func2,255);
 
     
 
@@ -107,6 +110,7 @@ function setup() {
     button3 = new Button(645,460,back)
     button4 = new Button(705, 460, graph)
     button5 = new Button(645,470,back)
+
 
     x10 = new NumberInput(620, 315, "x10 (N/m)",-1,1, 1, 1,1, true);
     x20  =new NumberInput(620, 360, "x20 (N/m)",-1, 1, 1, 1,1, true);
@@ -126,6 +130,7 @@ function draw() {
     if (page3){
         runPage3();
     }
+
 }
 
 function mousePressed() {

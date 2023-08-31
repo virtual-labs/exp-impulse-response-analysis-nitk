@@ -1,1 +1,0 @@
-## Impulse Response Analysis of 2 DOF System

@@ -17,7 +17,7 @@
     text("VARIABLES", 655, 107);
     pop();
     textSize(20);
-    text('Frequency Response Curve',80, 150);
+    text('Frequency Response Curve',60, 120);
     magFac1.initialise();
     magFac1.draw();
    // magFac3.initialise();
@@ -26,25 +26,23 @@
     magFac2.draw();
 
     stroke('red')
-    textSize(10);
-    line(420 , 170 , 450  , 170 );
+    textSize(14);
+    line(355 , 140 , 375  , 140 );
     
     stroke('black')
-    text('Frequency response curve ' , 380 , 180)
-    text(' with respect to differet amplitude of' , 380 , 190)
-    text(' X1 and w1' , 380, 200)
+    text('Frequency response of Mass 1 ' , 380 , 145)
+    
  
     stroke('purple')
-    textSize(10);
-    line(420 , 220 , 450  , 220 );
+    textSize(14);
+    line(355 , 160 , 375  , 160 );
     
     stroke('black')
-    text('Frequency response curve ' , 380 , 230)
-    text(' with respect to differet amplitude of ' , 380 , 240)
-    text('X2 and w2' , 380 , 250)
+    text('Frequency response of Mass 2 ' , 380 , 165)
     
-    let add = 330;
-    let dy = 175;
+    
+    let add = 320;
+    let dy = 90;
     stroke('red')
     strokeWeight(5)
     point(50+add , 100+dy)

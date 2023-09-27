@@ -1,0 +1,1 @@
+To visualize response of a 2 DOF system and find natural frequencies of system under impulse excitation.

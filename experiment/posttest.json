@@ -10,12 +10,12 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The right answer is (c). The Duhamel integral is used with non-periodic responses. It’s a powerful technique for solving linear differential equations with time-varying external forces. By integrating the product of the impulse response function and the external force, it provides a solution that accounts for the system’s dynamic behavior over time. ",
+        "b": "The right answer is (c). The Duhamel integral is used with non-periodic responses. It’s a powerful technique for solving linear differential equations with time-varying external forces. By integrating the product of the impulse response function and the external force, it provides a solution that accounts for the system’s dynamic behavior over time. ",
+        "c": "Correct, the right answer is (c). The Duhamel integral is used with non-periodic responses. It’s a powerful technique for solving linear differential equations with time-varying external forces. By integrating the product of the impulse response function and the external force, it provides a solution that accounts for the system’s dynamic behavior over time.",
+        "d": "The right answer is (c). The Duhamel integral is used with non-periodic responses. It’s a powerful technique for solving linear differential equations with time-varying external forces. By integrating the product of the impulse response function and the external force, it provides a solution that accounts for the system’s dynamic behavior over time. "
       },
-      "correctAnswer": "a",
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
@@ -25,8 +25,8 @@
         "b": "False"
       },
       "explanations": {
-        "a": "As the response of the system is non periodic, convolution method is used to analyze the system",
-        "b": "Option a is correct"
+        "a": "Correct, the right answer is (a). As the response of the system is non periodic, convolution method is used to analyze the system",
+        "b": "Option a is correct. As the response of the system is non periodic, convolution method is used to analyze the system"
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -40,10 +40,10 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct, the right answer is (a). At t=0, the displacement for the impulse response is assumed to be zero. This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied.",
+        "b": "The right answer is (a). The displacement for the impulse response is assumed to be 1 at infinite time.",
+        "c": "The right answer is (a). At t=0, the displacement for the impulse response is assumed to be zero. This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied.",
+        "d": "The right answer is (a). At t=0, the displacement for the impulse response is assumed to be zero. This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -57,12 +57,12 @@
         "d": "None of the above"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct, the right answer is (a). At t=0, the velocity for the impulse response is assumed to be zero. This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied.",
+        "b": "The right answer is (a). At t=0, the velocity for the impulse response is assumed to be zero. This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied.",
+        "c": "The right answer is (a). At t=0, the velocity for the impulse response is assumed to be zero. This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied.",
+        "d": "The right answer is (a). At t=0, the velocity for the impulse response is assumed to be zero. This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied."
       },
-      "correctAnswer": "c",
+      "correctAnswer": "a",
       "difficulty": "intermediate"
     },
     {
@@ -72,8 +72,8 @@
         "b": "False"
       },
       "explanations": {
-        "a": "Ft = m &delta;v",
-        "b": "Option a is correct"
+        "a": "Correct, the right answer is (a). The change in momentum of a system is indeed referred to as impulse. Impulse is defined as the product of the force applied to an object and the time interval over which the force acts. Ft = m &delta;v",
+        "b": "Option a is correct. The change in momentum of a system is indeed referred to as impulse. Impulse is defined as the product of the force applied to an object and the time interval over which the force acts."
       },
       "correctAnswer": "a",
       "difficulty": "advanced"

@@ -1,96 +1,131 @@
+let showCodeBlock = true;
 function runPage1() {
-    background(255);
-    image(bg, 0, 0)
-    stroke(0);
-    fill(0);
+  background(255);
+  // image(bg, 0, 0);
+  // stroke(0);
+  fill(0);
 
-    push();
-    textSize(30);
-    // textFont("Times");
-    textFont("Comic Sans MS")
-    text('Impulse Response Analysis of 2DOF System',150, 50);
+  push();
+  textSize(22);
+  textFont("'Nunito', sans-serif;");
+ 
+  // text('Free Vibration System',190, 30);
+  pop();
 
-    textSize(16);
-    text("CONTROLS", 655, 417);
-    text("VARIABLES", 655, 107);
-    pop();
+  push();
+  stroke(0, 100);
+  for (let i = 20; i < 591; i++) {
+    point(i, 480);
+    i += 2;
+  }
+  for (let i = 480; i < 970; i++) {
+    point(300, i);
+    i += 2;
+  }
+  pop();
 
-    push();
-    stroke(0, 100);
-    for (let i = 20; i < 591; i++) {
-        point(i, 480);
-        i += 2;
+
+
+position_graph1.update(spring1.y1);
+position_graph1.draw(255, 0,0)
+
+position_graph2.update(spring1.y2);
+position_graph2.draw(255, 0, 0)
+
+
+strokeWeight(0)
+
+document.getElementById("wd").textContent = spring1.w1.toFixed(4)+ " rad/s";
+
+document.getElementById("wn").textContent = spring1.w2.toFixed(4) + " rad/s";
+
+document.getElementById("ww1").textContent=((spring1.w1/spring1.w2)).toFixed(4) ;
+
+document.getElementById("xst").textContent= ((spring1.x1/spring1.x2)).toFixed(4);
+
+spring1.initialise(k3,k1,m1,k2,m2, x10,x20);
+spring1.update(t, factor);
+spring1.show(0, 1, 0);
+strokeWeight(0.5);  
+line (spring1.masscoordinates[0], spring1.masscoordinates[1], position_graph1.graphend[0], position_graph1.graphend[1])
+line (spring1.masscoordinates[2], spring1.masscoordinates[3], position_graph2.graphend[0], position_graph2.graphend[1])  
+
+  k1 = $("#fSpinner").spinner("value");
+  m1 = $("#omegaSpinner").spinner("value");
+  k2 = $("#k1Spinner").spinner("value");
+  m2 = $("#m1Spinner").spinner("value");
+  k3 = $("#k2Spinner").spinner("value");
+  F0 = $("#m2Spinner").spinner("value");
+  x10 = $("#x10Spinner").spinner("value");
+  // x20 = $("#x20Spinner").spinner("value");
+
+  // console.log(k1); 
+
+  strokeWeight(0);
+
+  $('#playpausebutton').css({
+    "opacity":1,
+    "pointer-events":"auto"
+  });
+  $('#refreshbutton').css({
+    "opacity":1,
+    "pointer-events":"auto"
+  });
+  $('#Results1').css({
+    "opacity":1,
+    "pointer-events":"auto"
+  });
+  t = t + dt;
+  function adjustCommentsWidth() {
+    if ($(window).width() < 944) {
+     
+      $('#variables').css('width', '100%');
+      document.getElementById('Results').style.display = "block";
+      // $('#refreshbutton').css({
+      //   "opacity":0.5,
+      //     "pointer-events":"none"
+      //     });
+      // $('#playpausebutton').css({
+      //     "opacity":0.5,
+      //       "pointer-events":"none"
+      //       });
+      // document.getElementById('playpausebutton').style.display = "block";
+      // document.getElementById('playPause').style.display = "block";
+
+    } else {
+    
+      $('#variables').css('width', '100%');
+      document.getElementById('Results').style.display = "block";
+      // $('#playpausebutton').css({
+      //   "opacity":0.5,
+      //     "pointer-events":"none"
+      //     });
+      // document.getElementById('playpausebutton').style.display = "block";
+      // document.getElementById('playPause').style.display = "block";
+ 
     }
-    for (let i = 480; i < 570; i++) {
-        point(300, i);
-        i += 2;
-    }
-    pop();
-
-    // spring1.initialise(x1.inp,x2.inp,k1.inp,m1.inp,k2.inp,m2.inp);
-    // spring1.update(t, factor);
-    // spring1.show(0, 1, 0);
-
-    position_graph1.update(spring1.y1);
-    position_graph1.draw(255, 0,0)
-
-    position_graph2.update(spring1.y2);
-    position_graph2.draw(255, 0, 0)
-
-    strokeWeight(0)
-/*
-    if(x1.inp!=0 || x2.inp!=0){
-    textSize(14);
-    textFont("Comic Sans MS")
-    fill(231, 114, 43);
-    text('ω1 = ' + spring1.w1.toFixed(4) + " rad/s", 50, 510);
-    text('ω2 = ' + spring1.w2.toFixed(4) + " rad/s", 50, 550);
-    text('Mode 1 = ' + spring1.ar1.toFixed(4) , 310, 510);
-    text('Mode 2 = ' + spring1.ar2.toFixed(4) , 310, 550);
-    }*/
-    // text('ω1/ω2 = ' + ((spring1.w1/spring1.w2)).toFixed(4) + " rad/s", 310, 510)
-    spring1.initialise(k3.inp,k1.inp,m1.inp,k2.inp,m2.inp , x10.inp , x20.inp);
-    spring1.update(t, factor);
-    spring1.show(0, 1, 0);
-    strokeWeight(0.5);    
-    // line(0, 440, 600, 440)
-    // line(300,440,300,580)
-
-    line (spring1.masscoordinates[0], spring1.masscoordinates[1], position_graph1.graphend[0], position_graph1.graphend[1])
-    line (spring1.masscoordinates[2], spring1.masscoordinates[3], position_graph2.graphend[0], position_graph2.graphend[1])
-
-    //text('η = ' + (slider_ang_freq.inp / spring1.wn).toFixed(4), 310, 535);
-    //text('z = ' + z.inp.toFixed(4), 310, 550);
-    // fill(0,0,0)
-    // textSize(20);
-    // text("Free Vibration System", 115, 110);
-
-   // x1.draw();
-   // x2.draw();
-   // F0.draw();
-   fill(0,0,0)
-   textSize(15);
-   text('ω1 = ' + spring1.w1.toFixed(4) + " rad/s", 50, 510);
-   text('ω2 = ' + spring1.w2.toFixed(4) + " rad/s", 50, 550);
-   text('x1/x2= ' + (spring1.x1/spring1.x2).toFixed(4) + " rad/s", 350, 550);
-   text('ω1/ω2 = ' + (spring1.w1/spring1.w2).toFixed(4) + " rad/s", 350, 510);
-
+    if ($(window).width() < 944) {
    
+      $('#Results').css('width', '100%');
+      document.getElementById('Results').style.display = "block";
+      // document.getElementById('playpausebutton').style.display = "block";
+      // document.getElementById('playPause').style.display = "block";
 
-    k1.draw();
-    m1.draw();
-    k2.draw();
-    m2.draw();
-   // k3.draw();
-    button1.draw();
-    button2.draw();
-   // x10.draw();
-   // x20.draw();
+    } else {
+     
+      $('#Results').css('width', '100%');
+      document.getElementById('Results').style.display = "block";
+      // document.getElementById('playpausebutton').style.display = "block";
+      // document.getElementById('playPause').style.display = "block";
+ 
+    }
+  }
 
-        
-     /*   if(x1.inp!=0 || x2.inp!=0){
-            button1.draw();
-            button2.draw();
-        }
-    t = t + dt;*/
+
+  adjustCommentsWidth();
+  
+
+  $(window).resize(adjustCommentsWidth);
+  
 }
+

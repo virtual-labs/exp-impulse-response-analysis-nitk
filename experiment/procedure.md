@@ -1,31 +1,26 @@
-Given data:
+### Procedure
 
-k<sub>1</sub> - stiffness of mass 1 (N/m) <br>
-m<sub>1</sub> - mass 1 (kg) <br>
-k<sub>2</sub> - stiffness of mass 2 (N/m) <br>
-m<sub>2</sub> - mass 2 (kg) <br>
+<div style="text-align:left">
+  Click on the Simulation icon <img src="images/simulation.png" alt="Alt text" style="height:80px; width:80px;">  to view the simulation. 
 
-For a constant value of impulse force, different responses can be observed by varying the masses m<sub>1</sub> and m<sub>2</sub> and stiffness k<sub>1</sub> and k<sub>2</sub>.
-1. On clicking the simulation tab, the first page is displayed as shown below.
+   ![Alt text](images/Simscreen1.png)
+   
+   In order to view the variable section click on the Variable icon. <img src="images/var1.png" alt="Alt text" style="height:80px; width:80px;">
 
+   ![Alt text](images/var2.png)
 
-![Alt text](images/1.png)
+   Click on the Results icon  <img src="images/result.png" alt="Alt text" style="height:80px;width:80px;"> to view the result tab.
+  
+  ![Alt text](images/res2.png)
 
-Here, the user can set k<sub>1</sub>, m<sub>1</sub>, k<sub>2</sub> and m<sub>2</sub>, which will vary the response of the system.
+   Click on Play icon <img src="images/play1.png" alt="Alt text" style="height:80px; width:80px;"> to run the simulation and click on Pause icon <img src="images/pause.png" alt="Alt text" style="height:80px; width:80px;"> to stop it.
+ 
+   Click on the Next icon  <img src="images/next2.png" alt="Alt text" style="height:80px; width:80px;"> to go further.  
 
-<br>
+   ![Alt text](images/screen2.png)
 
-2. On clicking the next button, the mode shapes will be displayed, while the simulation is running.
+   Click on the Next or Prev icon<img src="images/prenex.png" alt="Alt text" style="height:80px; width:80px;"> to cycle through different pages. 
 
+   ![Alt text](images/screen1.png)
 
-![Alt text](images/2.png)
-
-
-
-<br>
-
-3. The third page shows the frequency response curves.
-
-
-![Alt text](images/3.png)
-
+</div>

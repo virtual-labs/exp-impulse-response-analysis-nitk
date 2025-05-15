@@ -41,7 +41,7 @@ document.getElementById("wn").textContent = spring1.w2.toFixed(4) + " rad/s";
 
 document.getElementById("ww1").textContent=((spring1.w1/spring1.w2)).toFixed(4) ;
 
-document.getElementById("xst").textContent= ((spring1.x1/spring1.x2)).toFixed(4);
+// document.getElementById("xst").textContent= ((spring1.x1/spring1.x2)).toFixed(4);
 
 spring1.initialise(k3,k1,m1,k2,m2, x10,x20);
 spring1.update(t, factor);

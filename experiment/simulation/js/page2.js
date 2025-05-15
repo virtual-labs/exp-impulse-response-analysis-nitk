@@ -6,7 +6,7 @@
     {
 
     textFont('"Nunito", sans-serif');
-    textSize(18);
+    textSize(14);
     strokeWeight(0);
     text("MODE SHAPE", 235, 40);
     textSize(15);
@@ -28,7 +28,7 @@
     else if(spring1.x1==(-spring1.x2)){
 
         textFont('"Nunito", sans-serif');
-        textSize(18);
+        textSize(14);
         strokeWeight(0);
         text("MODE SHAPE",235, 40);
         textSize(15);
@@ -49,7 +49,7 @@
     else{
         
     textFont('"Nunito", sans-serif');
-    textSize(18);
+    textSize(14);
     strokeWeight(0);
     text("MODE SHAPES", 235, 40);
     textSize(15);
@@ -93,7 +93,7 @@ document.getElementById("ww1").textContent=(spring1.w / spring1.w1).toFixed(4) +
 document.getElementById("wn1").textContent=(spring1.w / spring1.w2).toFixed(4)
 document.getElementById("x1").textContent= abs(spring1.x2).toFixed(4);
 document.getElementById("x2").textContent= abs(spring1.x1).toFixed(4);
-document.getElementById("xst").textContent= (spring1.F0 / spring1.k1).toFixed(4),
+// document.getElementById("xst").textContent= (spring1.F0 / spring1.k1).toFixed(4),
 document.getElementById("x1st").textContent= abs(spring1.x2 / (spring1.F0 / spring1.k1)).toFixed(4),
 document.getElementById("x2st").textContent= abs(spring1.x1 / (spring1.F0 / spring1.k1)).toFixed(4),
 

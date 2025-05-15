@@ -9,7 +9,7 @@
  
   pop();
 
-  textSize(18);
+  textSize(14);
   strokeWeight(0);
   text('Frequency Response Curves',220, 20);
 
@@ -25,7 +25,7 @@
     line(325 , 140 , 345 , 140);
     stroke('black');
     strokeWeight(0);
-    textSize(16);
+    textSize(12);
     text('Frequency Response of Mass 1' , 360 , 145);
 
     stroke('red');
@@ -33,7 +33,7 @@
     line(325 , 160 , 345 , 160);
     stroke('black')
     strokeWeight(0);
-    textSize(16);
+    textSize(12);
     text('Frequency Response of Mass 2' , 360 , 165);
 
     let add = 320;
@@ -80,7 +80,7 @@ document.getElementById("ww1").textContent=(spring1.w / spring1.w1).toFixed(4) +
 document.getElementById("wn1").textContent=(spring1.w / spring1.w2).toFixed(4)
 document.getElementById("x1").textContent= abs(spring1.x2).toFixed(4);
 document.getElementById("x2").textContent= abs(spring1.x1).toFixed(4);
-document.getElementById("xst").textContent= (spring1.F0 / spring1.k1).toFixed(4),
+// document.getElementById("xst").textContent= (spring1.F0 / spring1.k1).toFixed(4),
 document.getElementById("x1st").textContent= abs(spring1.x2 / (spring1.F0 / spring1.k1)).toFixed(4),
 document.getElementById("x2st").textContent= abs(spring1.x1 / (spring1.F0 / spring1.k1)).toFixed(4),
 

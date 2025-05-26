@@ -2,38 +2,79 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Impulse response is due to periodic excitation",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "True",
+        "b": "False"
+        
+        
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The right answer is (b). Periodic excitations compensates for energy loss during oscillations. Impulse responce is obtained when the system is not excited repeatedly. ",
+        "b": "Correct, the rigth answer is (b). Impulse responce is obtained when the system is not excited repeatedly"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Impulse response is due to intial excitation with high magnitude acting for a short period of time",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Correct, the right answer is (a). Impulse response is due to intial excitation with high magnitude acting for a short period of time. It characterizes how a system responds to a Dirac delta function (an idealized impulse) input. In the time domain, the impulse response represents the system’s behavior over time after the excitation. In the frequency domain, it provides insights into the system’s natural frequencies and modes of vibration.",
+        "b": "The right answer is (a).  It characterizes how a system responds to a Dirac delta function (an idealized impulse) input. In the time domain, the impulse response represents the system’s behavior over time after the excitation. In the frequency domain, it provides insights into the system’s natural frequencies and modes of vibration. "
       },
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Impulse excitation is given at time t=0",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "True",
+        "b": "False"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Correct, the right answer is (a). Impulse excitations is given when body is at rest to know arbitrary responses.",
+        "b": "The right answer is (a). Impulse excitations is given when body is at rest to know arbitrary responses."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Identify sources of Impulse excitations",
+      "answers": {
+        "a": "Explosion",
+        "b": "Collision",
+        "c": "Hammer",
+        "d": "All of the above"
+      },
+      "explanations": {
+        "a": "The right answer is (d). Explosion is of high magnitude and acts for short period of time. Sudden release of energy due to chemical reactions or mechanical processes. But Collision and Hammer are also a source of impulse excitation.",
+        "b": "The right answer is (d). Collision is instantaneous. High-velocity impacts between objects. But Explosion and Hammer are also a source of impulse excitation.",
+        "c": "The right answer is (d). Hammers are used to impart impulse excitations.  But Collision and Explosion are also a source of impulse excitation.",
+        "d": "Correct, The right answer is (d). All are the sources of impulse excitations. Explosion is of high magnitude and acts for short period of time. Collision is instantaneous. High-velocity impacts between objects. Hammers are used to impart impulse excitations."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Unit impulse is called as",
+      "answers": {
+        "a": "Dirac delta function",
+        "b": "Sampling property",
+        "c": "both a and b",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "The right answer is (c). As impluse excitation happens as time t=0, dirac delta function is zero everywhere except at zero. It is also called as sampling proprerty as multiplying with a certian fuction and integrating with respect to time gives the impulse response.",
+        "b": "The right answer is (c). It is called as sampling proprerty as multiplying with a certian fuction and integrating with respect to time gives the impulse response. Also As impluse excitation happens as time t=0, dirac delta function is zero everywhere except at zero.",
+        "c": "Correct, the right answer is (c). As impluse excitation happens as time t=0, dirac delta function is zero everywhere except at zero. It is also called as sampling proprerty as multiplying with a certian fuction and integrating with respect to time gives the impulse response. These are how unit impulse is described.",
+        "d": "Option c is correct. As impluse excitation happens as time t=0, dirac delta function is zero everywhere except at zero. It is also called as sampling proprerty as multiplying with a certian fuction and integrating with respect to time gives the impulse response. These are how unit impulse is described."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "advanced"
     }
   ]
 }

@@ -1,0 +1,82 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "The Duhamel integral is a method that utilizes what to determine a system's response? ",
+      "answers": {
+        "a": "Impulse Response function",
+        "b": "Periodic response",
+        "c": "Non-periodic response",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "The right answer is (c). The Duhamel integral is used with non-periodic responses. It’s a powerful technique for solving linear differential equations with time-varying external forces. By integrating the product of the impulse response function and the external force, it provides a solution that accounts for the system’s dynamic behavior over time. ",
+        "b": "The right answer is (c). The Duhamel integral is used with non-periodic responses. It’s a powerful technique for solving linear differential equations with time-varying external forces. By integrating the product of the impulse response function and the external force, it provides a solution that accounts for the system’s dynamic behavior over time. ",
+        "c": "Correct, the right answer is (c). The Duhamel integral is used with non-periodic responses. It’s a powerful technique for solving linear differential equations with time-varying external forces. By integrating the product of the impulse response function and the external force, it provides a solution that accounts for the system’s dynamic behavior over time.",
+        "d": "The right answer is (c). The Duhamel integral is used with non-periodic responses. It’s a powerful technique for solving linear differential equations with time-varying external forces. By integrating the product of the impulse response function and the external force, it provides a solution that accounts for the system’s dynamic behavior over time. "
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The method of convolution used impulse response of the system.",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Correct, the right answer is (a). As the response of the system is non periodic, convolution method is used to analyze the system",
+        "b": "Option a is correct. As the response of the system is non periodic, convolution method is used to analyze the system"
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "At t=0 displacement for impulse response is assumed as",
+      "answers": {
+        "a": "Zero",
+        "b": "One",
+        "c": "Does not influence",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "Correct, the right answer is (a). At t=0, the displacement for the impulse response is assumed to be zero. This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied.",
+        "b": "The right answer is (a). The displacement for the impulse response is assumed to be 1 at infinite time.",
+        "c": "The right answer is (a). At t=0, the displacement for the impulse response is assumed to be zero. This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied.",
+        "d": "The right answer is (a). At t=0, the displacement for the impulse response is assumed to be zero. This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "At t=0 velocity for impulse response is assumed as",
+      "answers": {
+        "a": "Zero",
+        "b": "One",
+        "c": "1/m",
+        "d": "None of the above"
+      },
+      "explanations": {
+        "a": "The right answer is (c). At t=0, the velocity for the impulse response is assumed to be inverse of the mass(1/m). This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied.",
+        "b": "The right answer is (c). At t=0, the velocity for the impulse response is assumed to be inverse of the mass(1/m). This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied.",
+        "c": "Correct. The right answer is (c). At t=0, the velocity for the impulse response is assumed to be inverse of the mass(1/m). This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied.",
+        "d": "The right answer is (c). At t=0, the velocity for the impulse response is assumed to be inverse of the mass(1/m). This assumption simplifies the analysis and allows us to focus on the system’s behavior after the impulse is applied."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Change in momentum of a system is also called as impulse",
+      "answers": {
+        "a": "True",
+        "b": "False"
+      },
+      "explanations": {
+        "a": "Correct, the right answer is (a). The change in momentum of a system is indeed referred to as impulse. Impulse is defined as the product of the force applied to an object and the time interval over which the force acts. Ft = m &delta;v",
+        "b": "Option a is correct. The change in momentum of a system is indeed referred to as impulse. Impulse is defined as the product of the force applied to an object and the time interval over which the force acts."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
+    }
+  ]
+}
